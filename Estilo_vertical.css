@@ -1,0 +1,23 @@
+#menu { /* Selecciona el elemento con id="menu" */
+    font-family: Arial; /* Define la fuente del texto como Arial */
+}
+#menu p { /* Selecciona todos los párrafos dentro del elemento con id="menu" */
+    margin:0px; /* Elimina el margen exterior de los párrafos */
+    padding:0px; /* Elimina el relleno interior de los párrafos */
+}
+#menu a { /* Selecciona todos los enlaces dentro del elemento con id="menu" */
+    display: block; /* Convierte el enlace en elemento de bloque (ocupa todo el ancho disponible) */
+    padding: 3px; /* Agrega relleno interno de 3 píxeles */
+    width: 160px; /* Establece un ancho fijo de 160 píxeles */
+    background-color: #f7f8e8; /* Define color de fondo */
+    border-bottom: 1px solid #eeeeee; /* Agrega borde inferior de 1px color gris claro */
+    text-align:center; /* Centra el texto horizontalmente */
+}
+#menu a:link, #menu a:visited { /* Selecciona enlaces normales y visitados */
+    color: #ff0000; /* Define color del texto (nota: este código tiene error) */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+#menu a:hover { /* Selecciona enlaces cuando el cursor pasa sobre ellos */
+    background-color: #336699; /* Cambia color de fondo al pasar el mouse */
+    color: #ffffff; /* Cambia color del texto a blanco al pasar el mouse */
+}

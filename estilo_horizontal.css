@@ -1,0 +1,25 @@
+#menuhorizontal {
+  /* Selecciona el elemento con id="menuhorizontal" */
+  margin: 0; /* Elimina todos los márgenes exteriores */
+  padding: 0; /* Elimina todo el relleno interior */
+  list-style-type: none; /* Elimina los puntos/viñetas de la lista */
+}
+#menuhorizontal a {
+  /* Selecciona todos los enlaces dentro del menú horizontal */
+  width: 100px; /* Establece un ancho fijo de 100 píxeles */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  text-align: center; /* Centra el texto horizontalmente */
+  color: #ff0000; /* Define color del texto como rojo */
+  background-color: #fff8e8; /* Define color de fondo */
+  padding: 3px 5px; /* Agrega relleno: 3px arriba/abajo, 5px izquierda/derecha */
+  border-right: 1px solid blue; /* Agrega borde derecho de 1px color azul */
+  display: block; /* Convierte el enlace en elemento de bloque */
+}
+#menuhorizontal li {
+  /* Selecciona todos los elementos de lista dentro del menú horizontal */
+  float: left; /* Hace que los elementos floten a la izquierda (crea menú horizontal) */
+}
+#menuhorizontal a:hover {
+  /* Selecciona enlaces cuando el cursor pasa sobre ellos */
+  background-color: #336699; /* Cambia color de fondo al pasar el mouse */
+}

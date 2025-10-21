@@ -1,0 +1,51 @@
+/* Estilos para el banner */
+#banner { /* Selecciona el elemento con id="banner" */
+    background-color: #336699; /* Define color de fondo azul */
+    color: white; /* Define color del texto blanco */
+    padding: 20px; /* Agrega relleno interno de 20px */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para el menú */
+#menu { /* Selecciona el elemento con id="menu" */
+    background-color: #f0f0f0; /* Define color de fondo gris claro */
+    padding: 10px; /* Agrega relleno interno de 10px */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+#menu ul { /* Selecciona la lista dentro del menu */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina márgenes exteriores */
+    padding: 0; /* Elimina relleno interior */
+}
+
+#menu li { /* Selecciona los elementos de lista dentro del menú */
+    display: inline; /* Muestra los elementos en línea (horizontal) */
+    margin-right: 15px; /* Agrega margen derecho entre elementos */
+}
+
+#menu a { /* Selecciona los enlaces dentro del menú */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #336699; /* Define color del texto azul */
+    padding: 5px 10px; /* Agrega relleno interno */
+}
+
+#menu a:hover { /* Selecciona enlaces cuando el cursor pasa sobre ellos */
+    background-color: #336699; /* Cambia color de fondo al pasar el mouse */
+    color: white; /* Cambia color del texto a blanco */
+}
+
+/* Estilos para el contenido */
+#contenido { /* Selecciona el elemento con id="contenido" */
+    padding: 20px; /* Agrega relleno interno de 20px */
+    min-height: 300px; /* Establece altura mínima */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.seccion { /* Selecciona todos los elementos con clase "seccion" */
+    display: none; /* Oculta las secciones por defecto */
+}
+
+.activa { /* Selecciona elementos con clase "activa" */
+    display: block; /* Muestra la sección activa como bloque */
+}

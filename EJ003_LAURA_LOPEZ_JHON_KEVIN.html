@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html> <!-- Etiqueta raíz que contiene todo el documento HTML -->
+<head> <!-- Sección de metadatos e información del documento -->
+<title>EJERCICIO 3</title> <!-- Define el título de la página -->
+<meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 -->
+<link rel="stylesheet" href="estilo_plantilla.css" type="text/css"> <!-- Enlaza la hoja de estilos -->
+</head> <!-- Fin de la sección head -->
+<body> <!-- Cuerpo del documento, contenido visible de la página -->
+<div id="banner"> <!-- Div para el banner superior -->
+    <h1>Mi Sitio Web</h1> <!-- Título principal del banner -->
+</div> <!-- Fin del banner -->
+
+<div id="menu"> <!-- Div para el menú de navegación -->
+    <ul> <!-- Lista no ordenada para los elementos del menú -->
+        <li><a href="#inicio" onclick="cambiarContenido('inicio')">Inicio</a></li> <!-- Enlace para cambiar a sección inicio -->
+        <li><a href="#servicios" onclick="cambiarContenido('servicios')">Servicios</a></li> <!-- Enlace para cambiar a sección servicios -->
+        <li><a href="#contacto" onclick="cambiarContenido('contacto')">Contacto</a></li> <!-- Enlace para cambiar a sección contacto -->
+    </ul> <!-- Fin de la lista del menú -->
+</div> <!-- Fin del menú -->
+
+<div id="contenido"> <!-- Div para el contenido principal -->
+    <div id="inicio" class="seccion activa"> <!-- Sección inicio (activa por defecto) -->
+        <h2>Bienvenido a Inicio</h2> <!-- Título de la sección -->
+        <p>Este es el contenido de la página de inicio.</p> <!-- Párrafo de contenido -->
+    </div> <!-- Fin sección inicio -->
+    
+    <div id="servicios" class="seccion"> <!-- Sección servicios -->
+        <h2>Nuestros Servicios</h2> <!-- Título de la sección -->
+        <p>Ofrecemos diversos servicios de calidad.</p> <!-- Párrafo de contenido -->
+    </div> <!-- Fin sección servicios -->
+    
+    <div id="contacto" class="seccion"> <!-- Sección contacto -->
+        <h2>Información de Contacto</h2> <!-- Título de la sección -->
+        <p>Puede contactarnos a través de estos medios.</p> <!-- Párrafo de contenido -->
+    </div> 
+</div> <!-- Fin del contenido principal -->
+
+<script> <!-- Inicio de código JavaScript -->
+function cambiarContenido(seccion) { // Define función para cambiar contenido
+    // Oculta todas las secciones
+    document.querySelectorAll('.seccion').forEach(function(div) { // Selecciona todas las secciones
+        div.classList.remove('activa'); // Remueve la clase 'activa'
+    });
+    // Muestra la sección seleccionada
+    document.getElementById(seccion).classList.add('activa'); // Agrega clase 'activa' a la sección
+}
+</script> <!-- Fin del código JavaScript -->
+</body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin del documento HTML -->
